@@ -1,14 +1,13 @@
 import React from "react";
-import "./Header.scss";
 import { FaBars, FaUserAlt } from "react-icons/fa";
 
 export const Header = () => {
   const x = 1;
   return (
-    <header>
-      <FaBars />
-      <p className="logo">RO</p>
-      <FaUserAlt />
+    <header className="Header Block">
+      <FaBars className="Col2" />
+      <p className="Header-Logo Col8">RO</p>
+      <FaUserAlt className="Col2" />
     </header>
   );
 };

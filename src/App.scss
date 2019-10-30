@@ -1,0 +1,19 @@
+@import "./styles/reset";
+@import "./styles/colors";
+@import "./styles/colors";
+@import "./styles/variable";
+@import "./styles/mixin";
+@import "./styles/grid";
+@import "./fonts/fonts";
+@import "./components/layout/Header/Header";
+
+.App {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $dark-blue;
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
