@@ -13,5 +13,5 @@
 }
 
 @mixin column($col) {
-  flex: 0 0 calc(100% * (#{$col} / #{$grid_columns}));
+  flex: 0 0 calc(100% * #{$col / $grid_columns});
 }
