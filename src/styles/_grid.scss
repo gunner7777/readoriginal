@@ -3,8 +3,8 @@
 .Block {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 0px;
+  margin-left: 0px;
   justify-content: center;
 
   &-Column {
@@ -47,7 +47,7 @@
   margin-right: 0;
   margin-left: 0;
 
-  &>[class*="Col"] {
+  & > [class*="Col"] {
     padding-right: 0;
     padding-left: 0;
   }
