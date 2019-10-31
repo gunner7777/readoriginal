@@ -1,8 +1,8 @@
 import React from "react";
 import { FaUserAlt } from "react-icons/fa";
-import { ISimpleComponent } from "../../types";
+import { IParentComponent } from "../../types";
 
-export const Login: React.FC<ISimpleComponent> = ({ ...props }) => {
+export const Login: React.FC<IParentComponent> = ({ ...props }) => {
   return (
     <div {...props}>
       <FaUserAlt className="Login-Icon" />

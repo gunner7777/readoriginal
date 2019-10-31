@@ -1,8 +1,8 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
-import { ISimpleComponent } from "../../types";
+import { IParentComponent } from "../../types";
 
-export const Menu: React.FC<ISimpleComponent> = ({ ...props }) => {
+export const Menu: React.FC<IParentComponent> = ({ ...props }) => {
   return (
     <div {...props}>
       <FaBars />

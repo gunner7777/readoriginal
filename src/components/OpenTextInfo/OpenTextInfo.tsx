@@ -2,9 +2,12 @@ import React from "react";
 import { FaBookReader } from "react-icons/fa";
 import { IOpenTextInfo } from "../../types";
 
-export const OpenTextInfo: React.FC<IOpenTextInfo> = ({ textName }) => {
+export const OpenTextInfo: React.FC<IOpenTextInfo> = ({
+  textName,
+  className
+}) => {
   return (
-    <div className="OpenTextInfo Col12">
+    <div className={`OpenTextInfo ${className}`}>
       <p>
         <FaBookReader className="OpenTextInfo-TextImg" />
       </p>

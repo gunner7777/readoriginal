@@ -1,7 +1,7 @@
 import React from "react";
-import { ISimpleComponent } from "../../types";
+import { IParentComponent } from "../../types";
 
-export const BottomButton: React.FC<ISimpleComponent> = ({
+export const BottomButton: React.FC<IParentComponent> = ({
   children,
   ...props
 }) => {

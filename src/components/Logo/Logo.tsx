@@ -1,6 +1,6 @@
 import React from "react";
-import { ISimpleComponent } from "../../types";
+import { IParentComponent } from "../../types";
 
-export const Logo: React.FC<ISimpleComponent> = ({ children, ...props }) => {
+export const Logo: React.FC<IParentComponent> = ({ children, ...props }) => {
   return <p {...props}>{children}</p>;
 };
