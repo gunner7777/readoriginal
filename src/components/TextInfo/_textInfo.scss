@@ -1,0 +1,23 @@
+.TextInfo {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-radius: 8px;
+  background-color: $gray;
+  height: 100px;
+  margin-bottom: 15px;
+  /* padding: 0 15px; */
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-Img {
+    margin-right: 15px;
+  }
+
+  &-Title {
+    font-weight: 600;
+  }
+}

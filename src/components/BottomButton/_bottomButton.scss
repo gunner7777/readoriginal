@@ -1,0 +1,19 @@
+.BottomButton {
+  height: 100%;
+  border: none;
+  height: 50px;
+  background-color: $gray;
+  color: $white;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  cursor: pointer;
+
+  &>* {
+    align-items: center;
+  }
+
+  &-Icon {
+    margin-right: 5px;
+  }
+}

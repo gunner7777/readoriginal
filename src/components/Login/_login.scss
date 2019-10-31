@@ -1,0 +1,9 @@
+.Login {
+  font-size: 2rem;
+  text-align: right;
+
+  &-Icon {
+    border: 1px solid $white;
+    border-radius: 50%;
+  }
+}

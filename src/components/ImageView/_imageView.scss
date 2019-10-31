@@ -1,0 +1,9 @@
+.ImageView {
+  width: 80px;
+  height: 80px;
+
+  &_Round {
+    border: 1px solid transparent;
+    border-radius: 50%;
+  }
+}

@@ -4,12 +4,23 @@
 @import "./styles/variable";
 @import "./styles/mixin";
 @import "./styles/grid";
+@import "./styles/common";
 @import "./fonts/fonts";
-@import "./components/layout/Header/Header";
+@import "./components/layout/Header/header";
+@import "./components/layout/Content/content";
 @import "./components/Logo/logo";
+@import "./components/Login/login";
+@import "./components/Menu/menu";
+@import "./components/BottomButton/bottomButton";
+@import "./components/ImageView/imageView";
+@import "./components/TextInfo/textInfo";
+@import "./components/OpenTextInfo/openTextInfo";
 
 .App {
-  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
   margin: 0 auto;
   background-color: $dark-blue;
   font-family: "Roboto", sans-serif;

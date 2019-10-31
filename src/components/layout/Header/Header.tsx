@@ -1,14 +1,21 @@
 import React from "react";
-import { FaBars, FaUserAlt } from "react-icons/fa";
 import { Logo } from "../../Logo/Logo";
+import { Menu } from "../../Menu/Menu";
+import { Login } from "../../Login/Login";
 
 export const Header = () => {
   const x = 1;
   return (
-    <header className="Header Block">
-      <FaBars className="TopMenu Col2" />
-      <Logo className="Logo Col8">RO</Logo>
-      <FaUserAlt className="UserLogin Col2" />
-    </header>
+    <div className="Container">
+      <header className="Header Block No-Gutters Text_Center">
+        <Menu className="Menu Col2" />
+        <Logo className="Logo Col8">
+          <a className="Logo-Link" href="/">
+            RO
+          </a>
+        </Logo>
+        <Login className="Login Col2" />
+      </header>
+    </div>
   );
 };
