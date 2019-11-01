@@ -8,6 +8,7 @@
 @import "./fonts/fonts";
 @import "./components/layout/Header/header";
 @import "./components/layout/Content/content";
+@import "./components/layout/Bottom/bottom";
 @import "./components/Logo/logo";
 @import "./components/Login/login";
 @import "./components/Menu/menu";
@@ -18,7 +19,6 @@
 @import "./components/TextPart/textPart";
 
 .App {
-  height: 100%;
   display: flex;
   flex-direction: column;
   min-width: 240px;

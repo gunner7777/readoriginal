@@ -19,6 +19,30 @@ export const Content = () => {
           textAuthor="Брендон Сандерсон"
           textTitle="Слова сияния"
         />
+        <TextInfo
+          className="Col12"
+          imgUrl="./images/138728.jpg"
+          textAuthor="Брендон Сандерсон"
+          textTitle="Путь королей"
+        />
+        <TextInfo
+          className="Col12"
+          imgUrl="./images/138729.jpg"
+          textAuthor="Брендон Сандерсон"
+          textTitle="Слова сияния"
+        />
+        <TextInfo
+          className="Col12"
+          imgUrl="./images/138728.jpg"
+          textAuthor="Брендон Сандерсон"
+          textTitle="Путь королей"
+        />
+        <TextInfo
+          className="Col12"
+          imgUrl="./images/138729.jpg"
+          textAuthor="Брендон Сандерсон"
+          textTitle="Слова сияния"
+        />
 
         <OpenTextInfo
           className="Content-OpenTextInfo Col12"
