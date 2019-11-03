@@ -4,22 +4,24 @@ import { Menu } from "../../Menu/Menu";
 import { Login } from "../../Login/Login";
 
 export const Header = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+  const [isSticky, setIsSticky] = useState<boolean>(false);
 
   const handleScroll = () => {
     let currentScrollPos: number = window.pageYOffset;
-    console.log("object", currentScrollPos);
-    /* if (currentScrollPos !== prevScrollPos) {
-      setPrevScrollPos(prevScrollPos + 11);
-      console.log("qeqw", prevScrollPos);
-    } */
+    //console.log("object", currentScrollPos);
+    //console.log("object", prevScrollPos);
+    if (!isSticky || currentScrollPos >= 50) {
+      setIsSticky(!isSticky);
+    } else {
+      setIsSticky(!isSticky);
+    }
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  }, [prevScrollPos]);
+  }, []);
 
   return (
-    <div className="Container">
+    <div className={`Container ${isSticky ? "Header_Sticky" : ""}`}>
       <header className="Header Block No-Gutters Text_Center">
         <Menu className="Menu Col2" />
         <Logo className="Logo Col8">

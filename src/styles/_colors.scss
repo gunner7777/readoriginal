@@ -1,4 +1,9 @@
 $white: #ffffff;
-$dark-blue: #0e0f17;
+$dark_blue: #0e0f17;
 $gray: #303944;
 $green: #1a402e;
+
+$light: $white;
+$base-bg: $dark_blue;
+$base-elements: $gray;
+$success: $green;
