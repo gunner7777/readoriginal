@@ -1,8 +1,9 @@
 .Header {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  min-height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-height: 55px;
   background-color: $base-bg;
+  transition: position 8s linear;
 
   &_Sticky {
     position: fixed;
