@@ -4,14 +4,18 @@ import { IOpenTextInfo } from "../../types";
 
 export const OpenTextInfo: React.FC<IOpenTextInfo> = ({
   textName,
-  className
+  className,
+  partName
 }) => {
   return (
     <div className={`OpenTextInfo ${className}`}>
       <p>
         <FaBookReader className="OpenTextInfo-TextImg" />
       </p>
-      <p className="OpenTextInfo-TextName">{textName}</p>
+      <div>
+        <p className="OpenTextInfo-TextName">{textName}</p>
+        {partName && <p className="OpenTextInfo-PartName">{partName}</p>}
+      </div>
     </div>
   );
 };

@@ -1,0 +1,25 @@
+.Button {
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-weight: 600;
+
+  &_Small {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 1.7rem;
+    padding: 4px;
+  }
+
+  &-Success {
+    background-color: $success;
+    color: $light;
+  }
+
+  &-Close {
+    background-color: $alert;
+    color: $light;
+  }
+}

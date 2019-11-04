@@ -17,6 +17,7 @@
 
 export interface IOpenTextInfo extends IInlineProps {
   textName: string;
+  partName?: string;
 }
 
 /* export interface ITextPart {
@@ -44,3 +45,7 @@ export interface ITextInfo extends IImage, IInlineProps {
 export interface ITextPart extends IInlineProps {
   textPart: string;
 }
+
+export interface ITextForReading extends IParentComponent {}
+
+export interface IButton extends IParentComponent {}
