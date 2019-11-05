@@ -4,7 +4,7 @@ import { OpenTextInfo } from "../../OpenTextInfo/OpenTextInfo";
 import { TextPart } from "../../TextPart/TextPart";
 import { TextForReading } from "../../TextForReading/TextForReading";
 import { Button } from "../../Button/Button";
-import { FaTimes } from "react-icons/fa";
+import { WordTranslation } from "../../WordTranslation/WordTranslation";
 
 export const Content = () => {
   return (
@@ -70,9 +70,10 @@ export const Content = () => {
           cream macaroon applicake.
         </TextForReading>
         <Button className="Button-Success">Готово</Button>
-        <Button className="Button_Small Button-Close">
-          <FaTimes />
-        </Button>
+        <WordTranslation
+          engWord="Book"
+          translations={["книга", "журнал", "текст", "сценарий"]}
+        />
       </div>
     </div>
   );

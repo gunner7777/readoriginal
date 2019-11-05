@@ -1,2 +1,19 @@
 .WordTranslation {
+  position: fixed;
+  background-color: $base_elements_2;
+  color: $light;
+  width: 92%;
+  padding: 15px;
+  bottom: 50px;
+  border-radius: 8px;
+
+  &-EngWord {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &-Translations {
+    margin-top: 5px;
+  }
 }

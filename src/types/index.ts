@@ -49,3 +49,8 @@ export interface ITextPart extends IInlineProps {
 export interface ITextForReading extends IParentComponent {}
 
 export interface IButton extends IParentComponent {}
+
+export interface IWordTranslation {
+  engWord: string;
+  translations: Array<string>;
+}
