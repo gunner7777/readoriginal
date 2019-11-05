@@ -1,6 +1,7 @@
 import React from "react";
 import { IWordTranslation } from "../../types";
 import { Button } from "../Button/Button";
+import { Translation } from "../Translation/Translation";
 import { FaTimes } from "react-icons/fa";
 
 export const WordTranslation: React.FC<IWordTranslation> = ({
@@ -8,7 +9,9 @@ export const WordTranslation: React.FC<IWordTranslation> = ({
   translations
 }) => {
   const translationWords = translations.map((item, i) => (
-    <li key={i}>- {item}</li>
+    <li key={i}>
+      - <Translation>{item}</Translation>
+    </li>
   ));
   return (
     <div className="WordTranslation">
