@@ -54,3 +54,9 @@ export interface IWordTranslation {
   engWord: string;
   translations: Array<string>;
 }
+
+export interface ISortingButton {}
+
+export interface IROSelect {
+  selectOpt: Array<string>;
+}

@@ -1,0 +1,26 @@
+.ROSelect {
+  cursor: pointer;
+  background-color: $light;
+  color: $base_bg;
+  width: 50px;
+  height: 30px;
+  border-radius: 8px;
+
+  &-Button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+    padding: 0 8px;
+  }
+
+  &-Value,
+  &-Icon {
+    /* display: inline-block; */
+  }
+
+  &-Options {
+    display: none;
+  }
+}

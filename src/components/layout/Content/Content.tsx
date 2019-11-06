@@ -5,6 +5,7 @@ import { TextPart } from "../../TextPart/TextPart";
 import { TextForReading } from "../../TextForReading/TextForReading";
 import { Button } from "../../Button/Button";
 import { WordTranslation } from "../../WordTranslation/WordTranslation";
+import { ROSelect } from "../../ROSelect/ROSelect";
 
 export const Content = () => {
   return (
@@ -46,14 +47,12 @@ export const Content = () => {
           textAuthor="Брендон Сандерсон"
           textTitle="Слова сияния"
         />
-
         <OpenTextInfo
           className="Content-OpenTextInfo Col12"
           textName="Брендон Сандерсон. Путь королей"
         />
         <TextPart className="TextPart_Completed Col12" textPart="Часть 1" />
         <TextPart className="Col12" textPart="Часть 2" />
-
         <OpenTextInfo
           className="Content-OpenTextInfo Col12"
           textName="Брендон Сандерсон. Путь королей"
@@ -70,10 +69,13 @@ export const Content = () => {
           cream macaroon applicake.
         </TextForReading>
         <Button className="Button-Success">Готово</Button>
-        <WordTranslation
+        {/* <WordTranslation
           engWord="Book"
           translations={["книга", "журнал", "текст", "сценарий"]}
-        />
+        /> */}
+        <div className="Col12">
+          <ROSelect selectOpt={["A", "B", "C", "D"]} />
+        </div>
       </div>
     </div>
   );
