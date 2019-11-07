@@ -8,8 +8,11 @@ export const ROSelect: React.FC<IROSelect> = ({ selectOpt }) => {
       {item}
     </li>
   ));
+
+  const handleClick = () => {};
+
   return (
-    <div className="ROSelect">
+    <div onClick={handleClick} className="ROSelect">
       <p className="ROSelect-Button">
         <span className="ROSelect-Value">A</span>
         <span className="ROSelect-Icon">
