@@ -74,7 +74,7 @@ export const Content = () => {
           translations={["книга", "журнал", "текст", "сценарий"]}
         /> */}
         <div className="Col12">
-          <ROSelect selectOpt={["A", "B", "C", "D"]} />
+          <ROSelect selectOpt={[{value:"A", text: "A"}, {value:"B", text: "B"}, {value:"C", text: "C"}, {value:"D", text: "D"}]} />
         </div>
       </div>
     </div>

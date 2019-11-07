@@ -58,5 +58,5 @@ export interface IWordTranslation {
 export interface ISortingButton {}
 
 export interface IROSelect {
-  selectOpt: Array<string>;
+  selectOpt: Array<{ value: string; text: string }>;
 }
