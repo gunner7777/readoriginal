@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import { IROSelect } from "../../types";
 import { MdArrowDropDown } from "react-icons/md";
 
@@ -6,36 +6,29 @@ import { MdArrowDropDown } from "react-icons/md";
 // в списке выбираем нужное, список исчезает, значение меняется
 
 export const ROSelect: React.FC<IROSelect> = ({ selectOpt }) => {
-  // useRef
+  //const [selectOptions, setSelectOptions] = useState(selectOpt);
   const selectRef = useRef<HTMLSelectElement>(null);
-  //let selectElement: HTMLSelectElement = selectRef;
-  let selOptions: HTMLOptionsCollection;
-  //console.log(selectRef);
-  useLayoutEffect = () => {
-    handleChange();
-  }
-  const handleChange = () => {
-    //let selectElement: HTMLSelectElement = selectRef;
-    //let selOptions: HTMLOptionsCollection;
-    console.log('change ', selectRef.current);
-    if(selectRef.current) {
-      selectOpt.map(item => {
-        return selectRef.current.add(new Option(item.text, item.value));
-      }); 
-    }
-  }
 
-  /* selectOpt.map(item => {
-      return selectElement.add(new Option(item.text, item.value));
-  }); */
+  useLayoutEffect(() => {
+    selectOpt.forEach(item => {
+      if (selectRef.current) {
+        selectRef.current.add(new Option(item.text, item.value));
+      }
+    });
+  });
 
-  //const handleClick = () => {};
+  const handleChange = () => {};
 
   return (
-    <div className="ROSelect">
-      <select onClick={handleChange}  name="" id="roselect" ref={selectRef}>
-        <option>1</option>
-      </select>
+    <div className="ROSelect-Outer">
+      <select
+        className="ROSelect"
+        onClick={handleChange}
+        name=""
+        id="roselect"
+        ref={selectRef}
+      ></select>
+      <MdArrowDropDown className="ROSelect-Icon" />
     </div>
   );
 };
